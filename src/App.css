@@ -1,0 +1,112 @@
+*{
+  padding: 0px;
+  margin: 0px;
+
+}
+body{
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+
+}
+.card-info{
+  border: 2px solid black;
+  display: flex;
+  height: 450px;
+  width: 450px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+}
+
+
+.card {
+  --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+  width: 500px;
+  height: 500px;
+  padding: 5px;
+  border-radius: .5rem;
+  overflow: visible;
+  background: #f7ba2b;
+  background: var(--background);
+  position: relative;
+  z-index: 1;
+ }
+ 
+ .card::after {
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  transform: scale(.9);
+  filter: blur(25px);
+  background: #f7ba2b;
+  background: var(--background);
+  transition: opacity .5s;
+ }
+ 
+ .card-info {
+  --color: #181818;
+  background: var(--color);
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  align-items: center;
+  width: 496px;
+  height: 496px;
+  overflow: visible;
+  border-radius: .7rem;
+ }
+ .main-div{
+  height: auto;
+  width: auto;
+  display: flex;
+  padding: 2px;
+  gap: 10px;
+ }
+ .main-div .btn1{
+  background-color:  green;
+  color: whitesmoke;
+  font-weight: 800;
+ }
+ .main-div .btn2{
+  background-color:  orange;
+  color: whitesmoke;
+  font-weight: 800;
+ }
+ .main-div .btn3{
+  background-color:  red;
+  color: whitesmoke;
+  font-weight: 800;
+ }
+ .main-div .btn4{
+  background-color:  gray;
+  color: whitesmoke;
+  font-weight: 800;
+ }
+ .main-div .btn5{
+  background-color:  white;
+  color: black;
+  font-weight: 800;
+ }
+ 
+ 
+ .card:hover::after {
+  opacity: 0;
+ }
+ 
+ .card:hover .card-info {
+  color: #f7ba2b;
+  transition: color 1s;
+ }
+
+
+ 
