@@ -1,4 +1,4 @@
-# Timer : <a href="https://timer-five-liard.vercel.app/">Timer</a>
+# Deploy Link : <a href="https://timer-five-liard.vercel.app/">Timer</a>
 
 <h2>Overview</h2>
       <p>The Timer component is a React-based stopwatch application that allows users to measure elapsed time and record laps. It features start, pause, stop, reset, and lap functionalities, and provides visual feedback through a dynamic display and toast notifications.
